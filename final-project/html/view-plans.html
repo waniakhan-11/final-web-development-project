@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasterClass</title>
+
+    <!-- jquery link -->
+
+    <script src="../libs/jquery.js"></script>
+
+    <!-- jquery ui elemenet accordion -->
+
+    <link rel="stylesheet" href="../libs/jquery-ui-1.14.1.custom/jquery-ui.min.css">
+    <script src="../libs/jquery-ui-1.14.1.custom/jquery-ui.min.js"></script>
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- title icon -->
+    <link rel="icon" type="image/jpeg" href="../assets/icons/title-bar-icon.jpeg">
+
+
+</head>
+
+<body>
+
+
+    <!-- navigation bar -->
+    <nav class="view-plans-nav">
+
+        <div class="left-nav-view-plans">
+
+            <div class="nav-logo">
+                <img src="../assets/icons/navbar-logo.png" alt="not found" width="70px" height="70px">
+                <a href="../index.html">MasterClass</a>
+            </div>
+
+        </div>
+
+        <div class="right-nav-view-plans">
+            <div class="right-nav"></div>
+            <div class="right-nav-links-view-plans">
+                <ul>
+                    <li><a href="./login.html">Log In</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- after header -->
+
+    <main class="main-section">
+        <section class="main-sub-section">
+
+            <div class="main-sub-section-upper">
+                <div class="main-sub-section-upper-green">
+                    <div class="green-one">
+
+                    </div>
+                    <div class="green-two">
+
+                    </div>
+                    <div class="green-three">
+
+                    </div>
+                </div>
+
+                <div class="main-sub-section-upper-links">
+                    <div class="link-one">
+                        <a href="./view-plans.html">Membership</a>
+                    </div>
+
+                    <div class="link-two">
+                        <a href="./sign-up.html">Account</a>
+                    </div>
+
+                    <div class="link-three">
+                        <a href="./payment.html">Payment</a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="main-sub-section-text">
+                <h2>Choose an annual membership</h2>
+                <p> All membership plans come with a 30-day satisfaction guarantee and include:</p>
+                <div class="sub-section-text">
+                    <p><img src="../assets/icons/icons8-tick-30.png" alt="" width="25px" height="25px"> Access to 200+
+                        classes across 11 categories</p>
+                    <p><img src="../assets/icons/icons8-tick-30.png" alt="" width="25px" height="25px">Watch on your
+                        computer, TV, phone or tablet</p>
+                    <p><img src="../assets/icons/icons8-tick-30.png" alt="" width="25px" height="25px"> Bonus class
+                        guides & content</p>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <div class="wrapper-first-section">
+
+                    <div class="first-section-one">
+                        <h3 class="plan1-text">Standard</h3>
+                        <p class="plan1-text">1 device</p>
+                        <p class="plan1-text">No offline mode</p>
+                        <button id="plan1-btn">Select</button>
+                    </div>
+
+                    <div class="first-section-two">
+                        <h3 class="plan2-text">Plus</h3>
+                        <p class="plan2-text">2 device</p>
+                        <p class="plan2-text">Offline mode</p>
+                        <button id="plan2-btn">Select</button>
+                    </div>
+
+                    <div class="first-section-three">
+                        <div class="best-value-button">
+                            <button> Best Value</button>
+                        </div>
+                        <h3 class="plan3-text">Premium</h3>
+                        <p class="plan3-text">6 device</p>
+                        <p class="plan3-text">Offline mode</p>
+                        <div class="first-section-three-select-button">
+                            <button id="plan3-btn">Select</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="wrapper-second-section">
+                    <div class="second-section-text">
+                        <p>Monthly price (billed annually)</p>
+                    </div>
+
+                    <div class="second-section-sub">
+                        <div class="second-section-one">
+                            <p class="plan1-text">PKR508</p>
+                        </div>
+
+                        <div class="second-section-two">
+                            <p class="plan2-text">PKR762</p>
+                        </div>
+
+                        <div class="second-section-three">
+                            <p class="plan3-text">PKR1016</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grey-horizontal-line">
+
+                </div>
+
+                <div class="wrapper-third-section">
+                    <div class="third-section-text">
+                        <p>Devices you can watch at the same time</p>
+                        <p> Share with your household.</p>
+                    </div>
+
+                    <div class="third-section-sub">
+                        <div class="third-section-one">
+                            <p class="plan1-text">1</p>
+                        </div>
+
+                        <div class="third-section-two">
+                            <p class="plan2-text">2</p>
+                        </div>
+
+                        <div class="third-section-three">
+                            <p class="plan3-text">6</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grey-horizontal-line">
+
+                </div>
+
+                <div class="fourth-second-section">
+                    <div class="fourth-section-text">
+                        <p>Download for Offline viewing</p>
+                    </div>
+
+                    <div class="fourth-section-sub">
+                        <div class="fourth-section-one">
+                            <p class="plan1-text">NO</p>
+                        </div>
+
+                        <div class="fourth-section-two">
+                            <p class="plan2-text">YES</p>
+                        </div>
+
+                        <div class="fourth-section-three">
+                            <p class="plan3-text">YES</p>
+                        </div>
+                    </div>
+
+                    <div class="main-continue-btn">
+                        <a href="./sign-up.html"><button>Continue</button></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+    <!-- FAQs -->
+
+    <section class="faqs-view-plans">
+
+        <div class="faqs-heading">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <h4>General</h4>
+        <div class="accordion">
+            <h3 class="again">What is MasterClass?</h3>
+            <div class="accordion-div">
+                <p>
+                    MasterClass is the streaming platform that makes it possible for anyone to watch or listen to
+                    hundreds of video lessons taught by 200+ of the world’s best.
+
+
+                    Whether it be in business and leadership, photography, cooking, writing, acting, music, sports and
+                    more, MasterClass delivers a world class online learning experience. Video lessons are available
+                    anytime, anywhere on your smartphone, personal computer, Apple TV and FireTV streaming media players
+                </p>
+            </div>
+
+            <h3>What is include in MasterClass membership?</h3>
+            <div class="accordion-div">
+                <p>
+                    Membership includes access to an incredible catalog of 200+ classes taught by the world’s best on
+                    cooking, leadership, photography, writing and more.
+
+
+                    Each class includes around 20 video lessons that are 10 minutes long on average, along with an
+                    in-depth workbook. You also get access to our smartphone and TV apps, offline lessons, our members
+                    only newsletter, and our dynamic community of members around the world.
+                </p>
+            </div>
+
+            <h3>Where can I switch?</h3>
+            <div class="accordion-div">
+                <p>
+                    With MasterClass, you can learn and be inspired anytime, anywhere, including your smartphone,
+                    personal computer, Apple TV, Amazon Fire TV, and Roku streaming media players. You can even download
+                    your favorite lessons and watch on the plane or listen during your commute in audio-only mode.*
+                </p>
+
+            </div>
+            <h3>Which classes are right for me?</h3>
+            <div class="accordion-div">
+                <p>
+                    MasterClass offers 200+ classes across a variety of categories, including business and leadership,
+                    photography, cooking, writing, acting, music, sports and more. Every class has been designed to be
+                    accessible for people with little to no experience and advanced students alike. With new classes
+                    launching regularly, you can learn practical skills, ignite new passions, and get everyday wisdom.
+
+
+                    Check out our catalog and watch a few class trailers!
+                </p>
+            </div>
+        </div>
+
+        <h4>Pricing and Payment</h4>
+        <div class="accordion">
+            <h3>How much does MasterClass cost?</h3>
+            <div class="accordion-div">
+                <p>
+                    MasterClass is the streaming platform that makes it possible for anyone to watch or The annual
+                    membership is PKR6,096 and provides unlimited access to all classes and new classes as they launch.
+                    All MasterClass memberships include access to our mobile and TV apps, high-definition videos, and
+                    downloadable class workbooks.
+                </p>
+            </div>
+
+            <h3>Will I be charged taxes?</h3>
+            <div class="accordion-div">
+                <p>
+                    Depending on where you live, you may be charged taxes in addition to your annual membership price.
+                    If tax applies, you will see it stated separately on your emailed invoice. Tax rates are calculated
+                    based on your location or the billing information you provided at the time of purchase.
+
+
+                    Should you have any additional questions about taxes you were charged, please view our Support
+                    Helpdesk article on taxes or contact us.
+                </p>
+            </div>
+
+            <h3>How does the 30-day guarantee work?</h3>
+            <div class="accordion-div">
+                <p>
+                    Our goal is to make sure that you have the best learning experience possible. If MasterClass isn’t
+                    for you, then follow the instructions here and we'll offer a full refund within 30 days of the date
+                    you purchased your subscription.
+                </p>
+
+            </div>
+            <h3>How do I cancel?</h3>
+            <div class="accordion-div">
+                <p>
+                    If you don’t want to continue, you can cancel your membership renewal through your account page.
+                    Follow the prompts to cancel on the Settings page, and your membership will not renew. Please note
+                    that there aren’t refunds for partially unused membership periods.
+
+
+                    If you have more questions, contact us. We’re happy to help!
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+
+    <!-- grey border horizontal -->
+
+    <div class="grey-border">
+
+    </div>
+    <footer>
+
+        <section class="footer-links">
+            <div class="footer-links-inside">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="">Articles</a></li>
+                    <li><a href="">Sitemaps</a></li>
+                    <li><a href="">Gifts</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-inside">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="">Diversity, Equity, and Inclusion</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Newsroom</a></li>
+                    <li><a href="">Security</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Terms</a></li>
+                    <li><a href="">Social Impact</a></li>
+                    <li><a href="">MasterClass at Work</a></li>
+                    <li><a href="">Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-inside">
+                <h3>Social</h3>
+                <ul>
+                    <li><img src="../assets/icons/icons8-twitter-24.png" alt=""><a
+                            href="https://twitter.com/masterclass">Twitter</a></li>
+                    <li><img src="../assets/icons/icons8-instagram-24.png" alt=""><a
+                            href="https://www.instagram.com/masterclass/#">Instagram</a></li>
+                    <li><img src="../assets/icons/icons8-facebook-24.png" alt=""><a
+                            href="https://web.facebook.com/MasterClassOfficial/">Facebook</a></li>
+                    <li><img src="../assets/icons/icons8-youtube-24.png" alt=""><a
+                            href="https://www.youtube.com/c/masterclass">YouTube</a></li>
+                    <li><img src="../assets/icons/icons8-linkedin-24.png" alt=""><a
+                            href="https://www.linkedin.com/company/masterclassinc/">LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-images">
+                <h3>Download</h3>
+
+                <div class="footer-links-images-height">
+                    <a href="https://apps.apple.com/us/app/masterclass-become-more-you/id1273867416"><img
+                            src="../assets/icons/app-store.png" alt="" width="170px" height="140px"></a>
+                </div>
+
+                <div class="footer-links-images-height">
+                    <a href="https://play.google.com/store/apps/details?id=com.yanka.mc"><img
+                            src="../assets/icons/google-play.png" alt="not found" width="170px" height="140px"></a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="footer-end">
+
+            <img src="../assets/icons/title-bar-icon.jpeg" alt="not found" width="70px" height="65px">
+
+            <div class="footer-end-text">
+                <h4>&copy; 2025 MasterClass </h4>
+                <h4>&nbsp; &#x1F512; Secured with SSL</h4>
+            </div>
+
+        </section>
+    </footer>
+
+    <!-- js link -->
+    <script src="../javascript/script.js"></script>
+    <script>
+        let plan1Btn = document.querySelector('#plan1-btn');
+        let plan2Btn = document.querySelector('#plan2-btn');
+        let plan3Btn = document.querySelector('#plan3-btn');
+
+        let plan1Text = document.querySelectorAll('.plan1-text');
+        let plan2Text = document.querySelectorAll('.plan2-text');
+        let plan3Text = document.querySelectorAll('.plan3-text');
+
+        document.addEventListener('DOMContentLoaded', function () {
+            plan1Btn.addEventListener('click', function () {
+                plan1Btn.style.backgroundColor = '#E32552';
+                plan1Btn.style.borderStyle = 'none';
+
+                plan1Text.forEach(element => {
+                    element.style.color = '#FFFFFF';
+                });
+
+
+                // change other two
+                plan2Btn.style.backgroundColor = '#000000';
+                plan2Btn.style.borderStyle = 'solid';
+                plan2Btn.style.borderColor = '#2E3135';
+
+                plan2Text.forEach(element => {
+                    element.style.color = '#9ea0a9';
+                });
+
+                plan3Btn.style.backgroundColor = '#000000';
+                plan3Btn.style.borderStyle = 'solid';
+                plan3Btn.style.borderColor = '#2E3135';
+
+                plan3Text.forEach(element => {
+                    element.style.color = '#9ea0a9';
+                });
+
+            });
+
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            plan2Btn.addEventListener('click', function () {
+                plan2Btn.style.backgroundColor = '#E32552';
+                plan2Btn.style.borderStyle = 'none';
+
+                plan2Text.forEach(element => {
+                    element.style.color = '#FFFFFF';
+                });
+
+                // change other two
+                plan1Btn.style.backgroundColor = '#000000';
+                plan1Btn.style.borderStyle = 'solid';
+                plan1Btn.style.borderColor = '#2E3135';
+
+                plan1Text.forEach(element => {
+                    element.style.color = '#9ea0a9';
+
+                });
+
+                plan3Btn.style.backgroundColor = '#000000';
+                plan3Btn.style.borderStyle = 'solid';
+                plan3Btn.style.borderColor = '#2E3135';
+
+                plan3Text.forEach(element => {
+                    element.style.color = '#9ea0a9';
+                });
+
+            });
+
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            plan3Btn.addEventListener('click', function () {
+                plan3Btn.style.backgroundColor = '#E32552';
+                plan3Btn.style.borderStyle = 'none';
+
+
+                plan3Text.forEach(element => {
+                    element.style.color = '#FFFFFF';
+                });
+
+
+                // change other two
+                plan1Btn.style.backgroundColor = '#000000';
+                plan1Btn.style.borderStyle = 'solid';
+                plan1Btn.style.borderColor = '#2E3135';
+
+                plan1Text.forEach(element => {
+                    element.style.color = '#9ea0a9';
+                });
+
+                plan2Btn.style.backgroundColor = '#000000';
+                plan2Btn.style.borderStyle = 'solid';
+                plan2Btn.style.borderColor = '#2E3135';
+
+                plan2Text.forEach(element => {
+                    element.style.color = '#9ea0a9';
+                });
+
+            });
+
+        });
+
+        // dynamic dropdowns
+
+        $(document).ready(function () {
+
+
+            let json = {
+                "Credit Card": ["Standard Credit Card", "Student Credit Card", "Reward Credit Card", "Secured Credit Card"],
+                "Bank Transfer": ["Meezan Bank", "HBL", "Standard Chartered", "UBL", "Silk Bank"],
+
+            }
+
+            for (const key in json) {
+                $("#main").append(`<option>${key}</option>`)
+
+            }
+
+            $("#main").change(function () {
+                let selected = $(this).val();
+
+                $("#sub").empty()
+                $("#sub").append(` <option value="">Select any option</option>`)
+
+                for (const element of json[selected]) {
+                    $("#sub").append(` <option>${element}</option>`)
+                }
+            })
+
+        });
+
+
+    </script>
+
+</body>
+
+</html>

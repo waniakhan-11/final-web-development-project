@@ -1,0 +1,42 @@
+Final Project Folder Structure
+=============================
+
+This file outlines the folder structure of my final web development project for better understanding and navigation.
+
+final-project/
+├── index.html
+├── CSS/
+│   └── style.css (CSS file)
+├── JavaScript/
+│   └── script.js (JS file)
+├── libs/
+│   └── (external libraries like jQuery)
+├── media/
+│   ├── images/
+│   │   └── (all image files)
+│   └── videos/
+│       └── (all video files)
+├── assets/
+│   ├── icons/
+│   │   └── (icon files)
+│   └── myfonts/
+│       └── (custom font files)
+
+ Notes:
+-index.html: Main entry point of the website.
+
+-CSS/: Contains styling file.
+
+-JavaScript/: Contains all JavaScript code.
+
+ JavaScript that I wrote is mostly included within individual HTML pages.
+
+ script.js includes jQuery form validations.
+
+ Some functions from libraries (libs/) are also used within script.js.
+
+-libs/: External libraries used in the project (e.g., jQuery).
+
+-media/: All media content, including images and videos.
+
+-assets/: Design assets like icons and custom fonts.

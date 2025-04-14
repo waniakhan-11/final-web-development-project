@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasterClass Online Classes</title>
+    <!-- jquery link -->
+
+    <script src="./libs/jquery.js"></script>
+
+    <!-- jquery form validation -->
+
+    <script src="./libs/jqueryvalidation.js"></script>
+
+    <!-- jquery ui elemenet accorcion -->
+
+    <link rel="stylesheet" href="./libs/jquery-ui-1.14.1.custom/jquery-ui.min.css">
+    <script src="./libs/jquery-ui-1.14.1.custom/jquery-ui.min.js"></script>
+
+    <!-- nav bar dropdown -->
+
+    <link rel="stylesheet"
+        href="./libs/Touch-Enabled-Multi-level-Drop-Down-Menu-Plugin-superfish/dist/css/superfish.css">
+    <script src="./libs/Touch-Enabled-Multi-level-Drop-Down-Menu-Plugin-superfish/dist/js/hoverIntent.js"></script>
+    <script src="./libs/Touch-Enabled-Multi-level-Drop-Down-Menu-Plugin-superfish/dist/js/superfish.js"></script>
+
+
+    <!-- home page carousel -->
+
+    <link rel="stylesheet" href="./libs/touch-carousel-templates/strip/scripts/strip.css">
+    <script src="./libs/touch-carousel-templates/strip/scripts/strip.js"></script>
+
+    <!-- feedback carousel -->
+
+    <link rel="stylesheet" href="./libs/touch-carousel-templates/slide/scripts/slide.css">
+    <script src="./libs/touch-carousel-templates/slide/scripts/slide.js"></script>
+
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- title icon -->
+    <link rel="icon" type="image/jpeg" href="./assets/icons/title-bar-icon.jpeg">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+
+        <!-- navigation bar -->
+        <nav>
+
+            <div class="left-nav">
+
+                <div class="nav-logo">
+                    <img src="./assets/icons/navbar-logo.png" alt="not found" width="70px" height="70px">
+                    <a href="">MasterClass</a>
+                </div>
+
+                <div class="nav-dropdown">
+
+                    <ul class="sf-menu" id="example">
+                        <li class="current"> <a href="#">Browse</a>
+                            <ul>
+                                <li> <a href="#">Acting and Performing</a> </li>
+                                <li class="current"> <a href="#">Food and Drink</a>
+                                    <ul>
+                                        <li class="current"><a href="#"></a></li>
+                                        <li><a href="#">Bake Delicious</a></li>
+                                        <li><a href="#">Eat Heathy</a></li>
+                                        <li><a href="#">Beverages</a></li>
+                                        <li><a href="#">Oil and More</a></li>
+                                    </ul>
+                                </li>
+                                <li> <a href="#">Arts and Design</a>
+                                    <ul>
+                                        <li><a href="#">Paint and Design</a></li>
+                                        <li><a href="#">Create Art</a></li>
+                                        <li><a href="#">Explore Colors</a></li>
+                                        <li><a href="#">Shine Bright</a></li>
+                                        <li><a href="#">Photography</a></li>
+                                    </ul>
+                                </li>
+                                <li> <a href="#">Film and TV</a>
+                                    <ul>
+                                        <li><a href="#">Direct Movie</a></li>
+                                        <li><a href="#">Cinema</a></li>
+                                        <li><a href="#">Explore TVs</a></li>
+                                        <li><a href="#">Film Stories</a></li>
+                                        <li><a href="#">Documentary</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <img src="./assets/icons/icons8-expand-arrow-50-removebg-preview.png" alt="" width="20px"
+                            height="20px">
+                </div>
+
+                <div class="nav-search">
+                    <input type="text" placeholder="What do you want to learn today?">
+                </div>
+
+            </div>
+
+            <div class="right-nav">
+                <div class="right-nav-links">
+                    <ul>
+                        <li><a href="./html/at-work.html">At Work</a></li>
+                        <li><a href="./html/view-plans.html">View Plans</a></li>
+                        <li><a href="./html/login.html">Log In</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="right-nav-signup-button">
+
+                    <a href="./html/sign-up.html"><button>Sign Up</button></a>
+
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- scroll button -->
+
+    <button id="backToTopBtn" title="Go to top">↑</button>
+
+    <!-- window popup -->
+    <section class="window-popup-container" id="window-overlay">
+        <section class="window-popup">
+
+            <div class="window-popup-heading">
+                <h2>Our Cookies Policy</h2>
+                <p>
+                    We use thess cookies to gather information about the way users interact with our website.
+                    if you do not allow these cookies we will not be able to include your visit in our statistics.
+                </p>
+            </div>
+
+            <div class="popup-buttons">
+                <button class="popup-close-btn">Accept All Cookies</button>
+                <button class="popup-close-btn">Accept Necessary</button>
+
+            </div>
+
+        </section>
+    </section>
+
+    <!-- banner section -->
+    <section class="banner">
+
+        <div class="banner-left">
+
+            <div class="banner-left-up">
+                <h1>LEARN FROM THE BEST,<br>BE YOUR BEST.</h1>
+                <p>Get unlimited access to thousands of bite-sized lessons.</p>
+                <div class="red-line"></div>
+            </div>
+
+            <div class="banner-left-down">
+                <h2>What brings you to master class today?</h2>
+                <div class="banner-checkbox">
+                    <input type="checkbox" id="check1" class="inputCheck"><label for="">Develop my carrer or Leadership
+                        skills</label>
+                </div>
+                <div class="banner-checkbox">
+                    <input type="checkbox" id="check2" class="inputCheck"><label for="">Become a better actor, musician,
+                        or writer</label>
+                </div>
+                <div class="banner-checkbox">
+                    <input type="checkbox" id="check3" class="inputCheck"><label for="">Cultivate a healthy or active
+                        lifestyle</label>
+                </div>
+                <div class="banner-checkbox">
+                    <input type="checkbox" id="check4" class="inputCheck"><label for="">Learning about science and
+                        technology</label>
+                </div>
+                <div class="banner-checkbox">
+                    <input type="checkbox" id="check5" class="inputCheck"><label for="">Becoming a better chef</label>
+                </div>
+                <div class="banner-checkbox">
+                    <input type="checkbox" id="check6" class="inputCheck"><label for="">Improve my style, art, or
+                        interior design</label>
+                </div>
+                <div class="banner-checkbox">
+                    <input type="checkbox" id="check7" class="inputCheck"><label for="">Something else</label>
+                </div>
+
+                <div class="banner-left-continue-button">
+                    <button type="submit" id="continue-btn">Continue</button>
+                    <!-- <span class="button-msg">Please select atleast one option to continue.</span> -->
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="banner-right">
+
+            <aside>
+
+                <div class="left-aside">
+                    <img src="./media/images/vertical_scroll_hero_image_cropped_03.webp" alt="" width="300"
+                        height="340">
+                    <img class="image-borders" src="./media/images/vertical_scroll_hero_image_cropped_13.webp" alt=""
+                        width="300" height="340">
+                    <img src="./media/images/vertical_scroll_hero_image_cropped_05.webp" alt="" width="300"
+                        height="340">
+
+                    <img src="./media/images/vertical_scroll_hero_image_cropped_06.webp" alt="" width="300"
+                        height="340">
+
+                </div>
+
+                <div class="right-aside">
+                    <img class="image-borders" src="./media/images/MasterClass_Logo.jpg" alt="" width="300"
+                        height="170">
+                    <img src="./media/images/vertical_scroll_hero_image_cropped_09.webp" alt="" width="300"
+                        height="340">
+                    <img src="./media/images/vertical_scroll_hero_image.webp" alt="" width="300" height="340">
+                    <img class="image-borders" src="./media/images/vertical_scroll_hero_image_cropped_02.webp" alt=""
+                        width="300" height="340">
+                    <img class="image-borders"
+                        src="./media/images/360_F_1293049175_J66SBXuapl019UoIQAEiAt9eq55hk0pq.jpg" alt="" width="300"
+                        height="170">
+                </div>
+
+            </aside>
+
+        </div>
+    </section>
+
+    <!-- extra signup  -->
+
+    <section class="signup-section">
+
+        <div class="signup-section-left">
+            <h2>What's in every MasterClass </h2>
+            <h2>membership?</h2>
+
+            <div class="signup-section-left-button">
+                <a href="./html/sign-up.html"><button type="submit">Sign Up</button></a>
+            </div>
+        </div>
+
+        <div class="signup-section-right">
+            <img src="./assets/icons/icons8-right-arrow-30.png" alt="" width="25px" height="30px">
+            <p>All 200+ classes, sessions, and original series</p><br>
+            <img src="./assets/icons/icons8-right-arrow-30.png" alt="" width="25px" height="30px">
+            <p> Audio-only lessons</p><br>
+            <img src="./assets/icons/icons8-right-arrow-30.png" alt="" width="25px" height="30px">
+            <p> Download and watch offline (select plans)</p><br>
+            <img src="./assets/icons/icons8-right-arrow-30.png" alt="" width="25px" height="30px">
+            <p> Downloadable class guides for every class</p><br>
+            <img src="./assets/icons/icons8-right-arrow-30.png" alt="" width="25px" height="30px">
+            <p>Watch on desktop, TV, or mobile devices</p><br>
+            <img src="./assets/icons/icons8-right-arrow-30.png" alt="" width="25px" height="30px">
+            <p>New classes added every month</p><br>
+        </div>
+
+    </section>
+
+    <!-- video section  -->
+
+    <section class="video-section">
+
+        <div class="video-heading">
+            <h2>Meet the worlds best.</h2>
+            <h2>New classes added every month.</h2>
+        </div>
+        <div class="video">
+
+            <video width="100%" height="" autoplay muted>
+                <source src="./media/videos/This Is MasterClass _ MasterClass.mp4">
+            </video>
+
+        </div>
+
+    </section>
+
+    <!-- home page carousel section -->
+
+    <section class="homepage-carousel">
+
+        <div class="homepage-carousel-heading">
+
+            <h2>A dose of inspiration,</h2>
+            <h2> whenever you need it.</h2>
+
+        </div>
+
+        <div class="buttons-div">
+            <div class="buttons-div-center">
+                <div class="buttons-div-inside">
+                    <button class="gold-border">Trending</button>
+                    <button>Acting & Performing Arts</button>
+                    <button>Art & Deisign</button>
+                    <button>Business & Entrepreneurship</button>
+                </div>
+
+                <div class="buttons-div-inside">
+                    <button>Community & Government</button>
+                    <button>Film & TV</button>
+                    <button>Food & Drink</button>
+                    <button>Games & Digital Media</button>
+                    <button>Health & Wellness</button>
+                </div>
+
+                <div class="buttons-div-inside">
+                    <button>Music</button>
+                    <button>Outdoor Adventures & Events</button>
+                    <button>Science & Technology</button>
+                    <button>Sport & Athelitics</button>
+                    <button>Writing</button>
+                </div>
+
+                <h3>Popular Now</h3>
+            </div>
+
+        </div>
+
+        <div class="embed-carousel">
+
+            <div class="strip-carousel" id="mostviewed">
+                <div class="arrow-left">&lsaquo;</div>
+                <div class="arrow-right">&rsaquo;</div>
+                <div class="frames">
+                    <a href="#">
+                        <div class="frame">
+                            <div class="background-img1-carousel">
+                                <div class="new-button">
+                                    <button>New</button>
+                                </div>
+
+                                <div class="below-text">
+                                    <h3>ESTHER</h3>
+                                    <h3>PEREL</h3>
+                                    <div class="square-box">
+
+                                    </div>
+                                    <h4>Teaching Relational Intelligence</h4>
+                                    <p>3 hours 6 minutes</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="frame">
+                            <div class="background-img2-carousel">
+                                <div class="new-button">
+                                    <button>New</button>
+                                </div>
+
+                                <div class="below-text">
+                                    <h3>BE SMART</h3>
+                                    <div class="square-box">
+
+                                    </div>
+                                    <h4>With Noted Pros</h4>
+                                    <p>1 hours 8 minutes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="frame">
+                            <div class="background-img3-carousel">
+                                <div class="new-button">
+                                    <button>New</button>
+                                </div>
+
+                                <div class="below-text">
+                                    <h3>THE ART OF</h3>
+                                    <H3>apeal</H3>
+                                    <div class="square-box">
+
+                                    </div>
+                                    <h4>With Shan Bedroom</h4>
+                                    <p>6 hours 8 minutes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="frame">
+                            <div class="background-img4-carousel">
+                                <div class="new-button">
+                                    <button>New</button>
+                                </div>
+
+                                <div class="below-text">
+                                    <h3>THE ART OF</h3>
+                                    <H3>apeal</H3>
+                                    <div class="square-box">
+
+                                    </div>
+                                    <h4>With Shan Bedroom</h4>
+                                    <p>6 hours 8 minutes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="frame">
+                            <div class="background-img5-carousel">
+                                <div class="new-button">
+                                    <button>New</button>
+                                </div>
+
+                                <div class="below-text">
+                                    <h3>IN PRACTICE</h3>
+                                    <div class="square-box">
+
+                                    </div>
+                                    <h4>Original Series</h4>
+                                    <p>6 hours 2 minutes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="frame">
+                            <div class="background-img6-carousel">
+                                <div class="new-button">
+                                    <button>New</button>
+                                </div>
+
+                                <div class="below-text">
+                                    <h3>THE COW BOY</h3>
+                                    <div class="square-box">
+
+                                    </div>
+                                    <h4>A Documentary By Andrea</h4>
+                                    <p>12 hours 8 minutes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="frame">
+                            <div class="background-img7-carousel">
+                                <div class="new-button">
+                                    <button>New</button>
+                                </div>
+
+                                <div class="below-text">
+                                    <h3>JOANNA</h3>
+                                    <H3>GAINES</H3>
+                                    <div class="square-box">
+
+                                    </div>
+                                    <h4>Design a home that tells your story</h4>
+                                    <p>6 hours 15 minutes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="frame">
+                            <div class="background-img5-carousel">
+                                <div class="new-button">
+                                    <button>New</button>
+                                </div>
+
+                                <div class="below-text">
+                                    <h3>IN PRACTICE</h3>
+                                    <div class="square-box">
+
+                                    </div>
+                                    <h4>Original Series</h4>
+                                    <p>6 hours 2 minutes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="frame">
+                            <div class="background-img6-carousel">
+                                <div class="new-button">
+                                    <button>New</button>
+                                </div>
+
+                                <div class="below-text">
+                                    <h3>THE COW BOY</h3>
+                                    <div class="square-box">
+
+                                    </div>
+                                    <h4>A Documentary By Andrea</h4>
+                                    <p>12 hours 8 minutes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="explore-button">
+        <button>Explore Classes</button>
+    </div>
+
+    <!-- moving text section -->
+
+    <!-- <section class="text-section">
+        <div class="text-move">
+            <h2><span>MASTER CLASS</span>MASTER CLASS<span>MASTER CLASS</span>MASTER CLASS <span>MASTER
+                    CLASS</span>MASTER CLASS</h2>
+        </div>
+    </section> -->
+
+    <!-- explore classes -->
+
+    <section class="explore-classes">
+        <h2>Start your journey today.</h2>
+        <p>Choose from 3 plans.Starting at <span>PKR508/month,</span> billed annually.</p>
+
+        <div class="explore-class-buttons">
+            <a href="./html/sign-up.html"><button>Sign Up</button></a>
+            <button>Explore Classes</button>
+        </div>
+    </section>
+
+    <!-- contact sales section -->
+
+    <section class="contact-sales-section">
+
+        <div class="contact-sales-section-inner-div">
+
+            <div class="contact-sales-section-inner-div-left">
+                <img src="./media/images/contact-sales-img.png" alt="" width="75%" height="440px">
+            </div>
+
+            <div class="contact-sales-section-inner-div-right">
+                <h4>MasterClass <span>At Work</span></h4>
+                <h3>LEVEL UP YOUR TEAM</h3>
+
+                <p>See why leading organizations rely on </p>
+                <p> MasterClass for learning & development.</p>
+
+                <button>Contact Sales</button>
+                <a href="./html/at-work.html">Learn More</a><img src="./assets/icons/icons8-right-arrow-50.png" alt=""
+                    width="30px" height="30px">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- people feedback section -->
+
+    <article class="people-feedback">
+        <div class="people-feedback-heading">
+            <h2>See what our members are saying.</h2>
+        </div>
+
+        <section class="people-feedback-carousel">
+
+            <div class="slide-carousel" id="one">
+                <!-- <div class="arrow-left" id="left-arrow">&lsaquo;</div> -->
+                <div class="arrow-right" id="right-arrow">&rsaquo;</div>
+                <div class="slides">
+                    <div class="slide" id="slide1"><span class="title">
+                            <div class="feedback-carousel">
+                                <div class="feedback-carousel-text-div">
+                                    <p> “I was about to give up on my dreams when I started Hans Zimmer’s class. It was
+                                        like someone gave me a slap in the face. He said, “are you wasting your life or
+                                        are you not wasting your life? And that’s when I realized. I dont want to waste
+                                        another minute of it.”
+                                    </p>
+                                </div>
+                                <img src="./media/images/feedback-carousel-img1.png" alt="" width="60%" height="450px">
+                            </div>
+                        </span>
+                    </div>
+
+                    <div class="slide" id="slide2"><span class="title">
+                            <div class="feedback-carousel">
+                                <div class="feedback-carousel-text-div">
+                                    <p> “I’ve learned a positively immeasurable amount of things from Timbaland and
+                                        Natalie Portman. It gave me this sense of possibility. Like I can actually do
+                                        it. I can get a Billboard hit single, and it’s not that far away.”
+                                    </p>
+                                </div>
+                                <img src="./media/images/feedback-carousel-img2.png" alt="" width="60%" height="450px">
+                            </div>
+                        </span></div>
+
+                    <div class="slide" id="slide3"><span class="title">
+                            <div class="feedback-carousel">
+                                <div class="feedback-carousel-text-div">
+                                    <p> “As I traveled around Africa, I was compelled to tell the stories of the people
+                                        and places I encountered through film. But I had no resources. I enrolled in Ken
+                                        Burns’ class, and his words ignited a fire in me. I immediately started creating
+                                        and stopped waiting.”
+                                    </p>
+                                </div>
+                                <img src="./media/images/feedback-carousel-img3.png" alt="" width="60%" height="450px">
+                            </div>
+                        </span></div>
+
+
+                    <div class="slide" id="slide3"><span class="title"></span></div>
+                    <div class="slide" id="slide3"><span class="title"></span></div>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <section class="background-video-section">
+
+        <section class="background-video-heading">
+            <h2>Choose a category to watch a class highlight</h2>
+        </section>
+        <section class="background-video">
+
+            <div class="background-video-left">
+                <section class="background-video-txt">
+
+                    <a href="">Acting & Performing Arts</a>
+                    <a href="">Art & Design</a>
+                    <a href="">Businnes & Entrepreneurship</a>
+                    <a href="">Comunity & Government</a>
+                    <a href="">Film & TV</a>
+                    <a href="">Food and Drink</a>
+                    <a href="">Games & Digital Media</a>
+                    <a href="">Health & Wellness</a>
+                    <a href="">Music</a>
+                    <a href="">Outdoor Adventures & Events</a>
+                    <a href="">Science & Technology</a>
+                    <a href="">Sports & Atheletics</a>
+                    <a href="">Writing</a>
+                </section>
+            </div>
+
+            <div class="background-video-right">
+                <img src="./media/images/MasterClass_Logo.jpg" alt="" width="220px" height="220px">
+                <div class="img-border">
+
+                </div>
+                <video autoplay muted loop id="side-video">
+                    <source src="./media/videos/Say Hello to Our New Look _ MasterClass.mp4">
+                </video>
+
+                <div class="video-border">
+
+                </div>
+            </div>
+
+        </section>
+
+    </section>
+
+    <!-- email section -->
+
+    <section class="email-section">
+
+        <div class="left-email-section">
+            <div class="left-email-section-inner">
+                <h2>Try some of our classes</h2>
+                <p>Enter oyur email and we'll send you some samples of</p>
+                <p>our favourite classes</p>
+            </div>
+
+        </div>
+
+        <div class="right-email-section">
+            <form action="" id="email-submit-form">
+                <div class="right-email-section-inner">
+
+                    <label for="">Email</label><br>
+                    <input type="text" id="email-input" name="emailsubmit" placeholder="Enter Email Address">
+                    <div class="email-button">
+                        <button type="">Submit</button><br>
+                    </div>
+
+                    <input type="checkbox" name="emailcheckbox">
+                    <p class="checkbox-text">I agree to recieve email.</p>
+                    <p>By clicking Sign up with or by sharing your email, you</p>
+                    <p>agree to our <a href="">Term of Services</a> and <a href="">Privacy Policy</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQs -->
+
+    <section class="faqs">
+
+        <div class="faqs-heading">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <h4>General</h4>
+        <div class="accordion">
+            <h3>What is MasterClass?</h3>
+            <div class="accordion-div" id="again">
+                <p>
+                    MasterClass is the streaming platform that makes it possible for anyone to watch or listen to
+                    hundreds of video lessons taught by 200+ of the world’s best.
+
+
+                    Whether it be in business and leadership, photography, cooking, writing, acting, music, sports and
+                    more, MasterClass delivers a world class online learning experience. Video lessons are available
+                    anytime, anywhere on your smartphone, personal computer, Apple TV and FireTV streaming media players
+                </p>
+            </div>
+
+            <h3>What is include in MasterClass membership?</h3>
+            <div class="accordion-div">
+                <p>
+                    Membership includes access to an incredible catalog of 200+ classes taught by the world’s best on
+                    cooking, leadership, photography, writing and more.
+
+
+                    Each class includes around 20 video lessons that are 10 minutes long on average, along with an
+                    in-depth workbook. You also get access to our smartphone and TV apps, offline lessons, our members
+                    only newsletter, and our dynamic community of members around the world.
+                </p>
+            </div>
+
+            <h3>Where can I switch?</h3>
+            <div class="accordion-div">
+                <p>
+                    With MasterClass, you can learn and be inspired anytime, anywhere, including your smartphone,
+                    personal computer, Apple TV, Amazon Fire TV, and Roku streaming media players. You can even download
+                    your favorite lessons and watch on the plane or listen during your commute in audio-only mode.*
+                </p>
+
+            </div>
+            <h3>Which classes are right for me?</h3>
+            <div class="accordion-div">
+                <p>
+                    MasterClass offers 200+ classes across a variety of categories, including business and leadership,
+                    photography, cooking, writing, acting, music, sports and more. Every class has been designed to be
+                    accessible for people with little to no experience and advanced students alike. With new classes
+                    launching regularly, you can learn practical skills, ignite new passions, and get everyday wisdom.
+
+
+                    Check out our catalog and watch a few class trailers!
+                </p>
+            </div>
+        </div>
+
+        <h4>Pricing and Payment</h4>
+        <div class="accordion">
+            <h3>How much does MasterClass cost?</h3>
+            <div class="accordion-div">
+                <p>
+                    MasterClass is the streaming platform that makes it possible for anyone to watch or The annual
+                    membership is PKR6,096 and provides unlimited access to all classes and new classes as they launch.
+                    All MasterClass memberships include access to our mobile and TV apps, high-definition videos, and
+                    downloadable class workbooks.
+                </p>
+            </div>
+
+            <h3>Will I be charged taxes?</h3>
+            <div class="accordion-div">
+                <p>
+                    Depending on where you live, you may be charged taxes in addition to your annual membership price.
+                    If tax applies, you will see it stated separately on your emailed invoice. Tax rates are calculated
+                    based on your location or the billing information you provided at the time of purchase.
+
+
+                    Should you have any additional questions about taxes you were charged, please view our Support
+                    Helpdesk article on taxes or contact us.
+                </p>
+            </div>
+
+            <h3>How does the 30-day guarantee work?</h3>
+            <div class="accordion-div">
+                <p>
+                    Our goal is to make sure that you have the best learning experience possible. If MasterClass isn’t
+                    for you, then follow the instructions here and we'll offer a full refund within 30 days of the date
+                    you purchased your subscription.
+                </p>
+
+            </div>
+            <h3>How do I cancel?</h3>
+            <div class="accordion-div">
+                <p>
+                    If you don’t want to continue, you can cancel your membership renewal through your account page.
+                    Follow the prompts to cancel on the Settings page, and your membership will not renew. Please note
+                    that there aren’t refunds for partially unused membership periods.
+
+
+                    If you have more questions, contact us. We’re happy to help!
+                </p>
+            </div>
+        </div>
+
+
+        <h4>Sessions</h4>
+
+        <div class="accordion">
+            <h3>What are sessions of MasterClass and How are they different from classes?</h3>
+            <div class="accordion-div">
+                <p>
+                    Sessions by MasterClass is a new hands-on format by MasterClass where you can learn alongside the
+                    world’s best by working on projects and activities as part of a structured curriculum. You will
+                    actively participate in the sessions by sharing your work with an engaged community and get feedback
+                    from your peers. All video content is pre-recorded and you maintain access to all Session materials
+                    during your membership.
+                </p>
+            </div>
+            <h3>Are sessions included in my MasterClass subcription?</h3>
+            <div class="accordion-div">
+                <p>
+                    Yes, purchasing a MasterClass subscription provides you with unlimited access to all current
+                    sessions and classes, as well the new sessions and classes launched each month. Your annual
+                    membership unlocks a catalog of 200+ classes and sessions taught by the world’s best on cooking,
+                    leadership, photography, writing, and more.
+
+
+                    With a MasterClass subscription,* you also get access to our smartphone and TV apps, offline lessons
+                    (for classes only), our members-only newsletter, and our community of members around the world.
+
+
+                    *Sessions are available on Android, Desktop, and iOS. Each subscription will share one profile for
+                    session progress (including Family and Duo subscriptions).
+                </p>
+            </div>
+            <h3>What skill-level required for session?</h3>
+            <div class="accordion-div">
+                <p>
+                    Sessions are designed for people at all skill levels. Your instructor will walk you through a
+                    structured curriculum with step-by-step instructions, but will also challenge you to go beyond the
+                    session content by exploring your own creativity. You will be able to gain support and up-level your
+                    skills by participating in an engaging community and by receiving meaningful feedback on your work
+                    from peers.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <!-- grey border horizontal -->
+
+    <div class="grey-border">
+
+    </div>
+
+    <footer>
+
+        <section class="footer-links">
+            <div class="footer-links-inside">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="">Articles</a></li>
+                    <li><a href="">Sitemaps</a></li>
+                    <li><a href="">Gifts</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-inside">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="">Diversity, Equity, and Inclusion</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Newsroom</a></li>
+                    <li><a href="">Security</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Terms</a></li>
+                    <li><a href="">Social Impact</a></li>
+                    <li><a href="">MasterClass at Work</a></li>
+                    <li><a href="">Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-inside">
+                <h3>Social</h3>
+                <ul>
+                    <li><img src="./assets/icons/icons8-twitter-24.png" alt=""><a
+                            href="https://twitter.com/masterclass">Twitter</a></li>
+                    <li><img src="./assets/icons/icons8-instagram-24.png" alt=""><a
+                            href="https://www.instagram.com/masterclass/#">Instagram</a></li>
+                    <li><img src="./assets/icons/icons8-facebook-24.png" alt=""><a
+                            href="https://web.facebook.com/MasterClassOfficial/">Facebook</a></li>
+                    <li><img src="./assets/icons/icons8-youtube-24.png" alt=""><a
+                            href="https://www.youtube.com/c/masterclass">YouTube</a></li>
+                    <li><img src="./assets/icons/icons8-linkedin-24.png" alt=""><a
+                            href="https://www.linkedin.com/company/masterclassinc/">LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-images">
+                <h3>Download</h3>
+
+                <div class="footer-links-images-height">
+                    <a href="https://apps.apple.com/us/app/masterclass-become-more-you/id1273867416"><img
+                            src="./assets/icons/app-store.png" alt="" width="170px" height="140px"></a>
+                </div>
+
+                <div class="footer-links-images-height">
+                    <a href="https://play.google.com/store/apps/details?id=com.yanka.mc"><img
+                            src="./assets/icons/google-play.png" alt="not found" width="170px" height="140px"></a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="footer-end">
+
+            <img src="./assets/icons/title-bar-icon.jpeg" alt="not found" width="70px" height="65px">
+
+            <div class="footer-end-text">
+                <h4>&copy; 2025 MasterClass </h4>
+                <h4>&nbsp; &#x1F512; Secured with SSL</h4>
+            </div>
+
+        </section>
+    </footer>
+
+    <!-- js link -->
+    <script src="./javascript/script.js"></script>
+    <script>
+        let closeBtn = document.querySelectorAll('.popup-close-btn');
+        let overlay = document.querySelector('#window-overlay');
+
+        window.onload = function () {
+            overlay.style.display = 'block';
+        }
+
+        closeBtn.forEach(button => {
+
+            button.addEventListener('click', function () {
+
+                overlay.style.display = 'none';
+
+            });
+        });
+
+
+        //input and button active
+        let check1 = document.querySelector('#check1');
+        let check2 = document.querySelector('#check2');
+        let check3 = document.querySelector('#check3');
+        let check4 = document.querySelector('#check4');
+        let check5 = document.querySelector('#check5');
+        let check6 = document.querySelector('#check6');
+        let check7 = document.querySelector('#check7');
+        let continueBtn = document.querySelector('#continue-btn');
+
+        let allInput = document.querySelectorAll('.inputCheck')
+
+        allInput.forEach((checkbox) => {
+            checkbox.addEventListener('change', function () {
+                if (check1.checked || check2.checked || check3.checked || check4.checked || check5.checked || check6.checked || check7.checked) {
+                    continueBtn.style.backgroundColor = '#E32552';
+                    continueBtn.style.cursor = 'pointer';
+                }
+                else {
+                    continueBtn.style.backgroundColor = '#202020';
+                }
+            });
+        });
+
+        // scroll up button
+        let mybutton = document.getElementById("backToTopBtn");
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        };
+
+        mybutton.onclick = function () {
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+</body>
+
+</html>
